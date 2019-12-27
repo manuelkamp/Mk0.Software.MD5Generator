@@ -57,6 +57,10 @@
             this.textBoxMD5.Size = new System.Drawing.Size(360, 108);
             this.textBoxMD5.TabIndex = 2;
             // 
+            // openFileDialog
+            // 
+            this.openFileDialog.Title = "Datei wählen...";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

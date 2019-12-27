@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("MD5 Generator")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("mk0.at")]
 [assembly: AssemblyProduct("Mk0.Software.MD5Generator")]
 [assembly: AssemblyCopyright("Copyright © 2019-2020 mk0.at")]
 [assembly: AssemblyTrademark("")]

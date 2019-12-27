@@ -7,7 +7,7 @@
     <ProjectGuid>{309B3DB4-6BF0-4B17-91D5-EA28DADDF2EB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Mk0.Software.MD5Generator</RootNamespace>
-    <AssemblyName>Mk0.Software.MD5Generator</AssemblyName>
+    <AssemblyName>MD5 Generator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
