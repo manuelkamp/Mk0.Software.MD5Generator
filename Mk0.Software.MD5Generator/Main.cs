@@ -38,5 +38,13 @@ namespace Mk0.Software.MD5Generator
                 }
             }
         }
+
+        private void ButtonCopy_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(textBoxMD5.Text))
+            {
+                Clipboard.SetText(textBoxMD5.Text);
+            }
+        }
     }
 }

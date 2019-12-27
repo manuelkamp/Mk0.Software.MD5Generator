@@ -32,6 +32,7 @@
             this.buttonSelectFile = new System.Windows.Forms.Button();
             this.textBoxMD5 = new System.Windows.Forms.TextBox();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.buttonCopy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonSelectFile
@@ -61,11 +62,22 @@
             // 
             this.openFileDialog.Title = "Datei wählen...";
             // 
+            // buttonCopy
+            // 
+            this.buttonCopy.Location = new System.Drawing.Point(297, 12);
+            this.buttonCopy.Name = "buttonCopy";
+            this.buttonCopy.Size = new System.Drawing.Size(75, 23);
+            this.buttonCopy.TabIndex = 3;
+            this.buttonCopy.Text = "Kopieren";
+            this.buttonCopy.UseVisualStyleBackColor = true;
+            this.buttonCopy.Click += new System.EventHandler(this.ButtonCopy_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 161);
+            this.Controls.Add(this.buttonCopy);
             this.Controls.Add(this.textBoxMD5);
             this.Controls.Add(this.buttonSelectFile);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -87,6 +99,7 @@
         private System.Windows.Forms.Button buttonSelectFile;
         private System.Windows.Forms.TextBox textBoxMD5;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
+        private System.Windows.Forms.Button buttonCopy;
     }
 }
 
