@@ -2,6 +2,7 @@
 using System.IO;
 using System.Security.Cryptography;
 using System.Windows.Forms;
+using Mk0.Software.OnlineUpdater;
 
 namespace Mk0.Software.MD5Generator
 {
@@ -38,6 +39,12 @@ namespace Mk0.Software.MD5Generator
             {
                 Clipboard.SetText(textBoxMD5.Text);
             }
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            AutoUpdater.ShowSkipButton = false;
+            AutoUpdater.Start("https://software.mk0.at/update/md5generator.xml");
         }
     }
 }
