@@ -44,7 +44,7 @@ namespace Mk0.Software.MD5Generator
         private void Main_Load(object sender, EventArgs e)
         {
             AutoUpdater.ShowSkipButton = false;
-            AutoUpdater.Start("https://software.mk0.at/update/md5generator.xml");
+            AutoUpdater.Start("https://www.kmpr.at/update/md5generator.xml");
         }
     }
 }
