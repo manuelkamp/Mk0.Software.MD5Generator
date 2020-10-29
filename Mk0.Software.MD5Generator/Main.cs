@@ -46,5 +46,26 @@ namespace Mk0.Software.MD5Generator
             AutoUpdater.ShowSkipButton = false;
             AutoUpdater.Start("https://www.kmpr.at/update/md5generator.xml");
         }
+
+        private void Main_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+                e.Effect = DragDropEffects.Copy;
+            else
+                e.Effect = DragDropEffects.None;
+        }
+
+        private void Main_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] FileList = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+            if (FileList.Length > 1)
+            {
+                MessageBox.Show("Nur eine Datei erlaubt!", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                GenerateMD5(FileList[0]);
+            }
+        }
     }
 }
